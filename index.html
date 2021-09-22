@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>A half</title>
+</head>
+
+<body class="d-flex flex-column vh-100">
+
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg nav-primary">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">A half</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./favoritos.html"><img src="./img/heart.png" alt=""></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="cUser" href=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="logout" href="">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-4">
+                <div class="card mx-auto" style="width: 18rem;" id="cardInfo" hidden>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-dark"><img src="./img/Gender.png" alt=""><span id="gender"
+                                class="float-right lead"></span></li>
+                        <li class="list-group-item text-dark"><img src="./img/Flag.png" alt=""><span class="float-right"
+                                id="nations"></span></li>
+                        <li class="list-group-item text-dark"><img src="./img/trumpet.png" alt=""><span
+                                class="float-right lead" id="age"></span></li>
+                        <li class="list-group-item text-dark">
+                            <input type="button" class="btn btn-sm btn-primary float-right" value="Cerrar"
+                                id="bntCerrarInfo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <ul class="nav justify-content-center mt-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Volumen</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" name="btnVol" title="0" href="#">Bajo</a>
+                            <a class="dropdown-item" name="btnVol" title="4" href="#">Normal (entre 4 y 6)</a>
+                            <a class="dropdown-item" name="btnVol" title="6" href="#">Más de 6</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Amargor</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" name="btnAmarg" title="50" href="#">Poco amarga</a>
+                            <a class="dropdown-item" name="btnAmarg" title="100" href="#">Muy amarga</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Color</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" name="btnColor" title="4" href="#">Rubias</a>
+                            <a class="dropdown-item" name="btnColor" title="33" href="#">Tostadas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item nav-pills">
+                        <a class="nav-link active" href="#" id="randomBeer">Aleatorio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row my-5" id="beerCards">
+
+        </div>
+    </div>
+
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-light">© 2020 Copyright</span>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
+
+</html>
